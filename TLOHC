@@ -1,0 +1,122 @@
+→<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TestProject</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription> ~/octocat-classifier $ npm install eslint
++ eslint@7.8.1
+  added 109 packages from 64 contributors and audited 109 packages in 3.491s
+ 
+9 packages are looking for funding
+  run `npm fund` for details
+ 
+found 0 vulnerabilities
+→ ~/octocat-classifier $
+const token = process.env["TWITTER_BEARER_TOKEN"]
+const fetchTweetsFromUser = async (screenName, count) => {
+  const response = await fetch(
+    `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${screenName}&count=${count}`,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      FROM launcher.gcr.io/google/nodejs
+
+# Copy application code
+COPY . /app/
+
+# Change the working directory
+
+WORKDIR /app
+
+# Install dependencies.
+RUN npm install
+
+# Start the Express app
+CMD ["node", "server.js"] },
+   .get('/version')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end((err, res) => {
+          if (err) {
+            return done(err);
+          }
+          chai.expect(JSON.parse(res.text)).to.eql({ version: '1.0.0' });
+          return done();
+        });
+    });
+  });
+  describe('GET /events', function() {
+    it('responds with json', function(done) {
+      request(app)
+        .get('/events')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+ }
+  )
+  const json = await response.json()
+  return json
+// health endpoint - returns an empty array
+app.get('/', (req, res) => {
+    res.json([]);
+});
+// version endpoint to provide easy convient method to demonstrating tests pass/fail
+app.get('/version', (req, res) => {
+    res.json({ version: '1.0.0' });
+});
+// mock events endpoint. this would be replaced by a call to a datastore
+// if you went on to develop this as a real application.
+app.get('/events', (req, res) => {
+    getEvents(req, res);
+});
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+// health endpoint - returns an empty array
+app.get('/', (req, res) => {
+    res.json([]);
+});
+// version endpoint to provide easy convient method to demonstrating tests pass/fail
+app.get('/version', (req, res) => {
+    res.json({ version: '1.0.0' });
+});
+// mock events endpoint. this would be replaced by a call to a datastore
+// if you went on to develop this as a real application.
+app.get('/events', (req, res) => {
+    getEvents(req, res);
+});
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TestProject</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
